@@ -5,11 +5,15 @@ import static org.junit.Assert.assertThat;
 
 public class HelloUserTest {
 
-    // Failing test
     @Test
     public void getUserGreetingTest(){
         String expectedUserGreeting = "Hello Bob";
-        String actualUserGreeting = "";
+        String actualUserGreeting = Hello.getGreeting("Bob");
         assertThat(actualUserGreeting, is(expectedUserGreeting));
+    }
+
+    @Test
+    public void getFlakyResultTest(){
+        assertThat( Math.random() < 0.5, is(true));
     }
 }
