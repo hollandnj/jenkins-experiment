@@ -28,27 +28,27 @@ public class HelloUserTest {
 
     @Test
     public void flakyResultTest1() {
-        assertThat(Math.random() < 0.1, is(true));
+        assertThat(Math.random() < 0.9, is(true));
     }
     @Test
     public void flakyResultTest2() {
-        assertThat(Math.random() < 0.1, is(true));
+        assertThat(Math.random() < 0.9, is(true));
     }
     @Test
     public void flakyResultTest3() {
-        assertThat(Math.random() < 0.1, is(true));
+        assertThat(Math.random() < 0.9, is(true));
     }
     @Test
     public void flakyResultTest4() {
-        assertThat(Math.random() < 0.1, is(true));
+        assertThat(Math.random() < 0.9, is(true));
     }
     @Test
     public void flakyResultTest5() {
-        assertThat(Math.random() < 0.1, is(true));
+        assertThat(Math.random() < 0.9, is(true));
     }
     @Test
     public void flakyResultTest6() {
-        assertThat(Math.random() < 0.1, is(true));
+        assertThat(Math.random() < 0.9, is(true));
     }
 }
 
