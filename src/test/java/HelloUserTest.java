@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -12,6 +13,7 @@ public class HelloUserTest {
         assertThat(actualUserGreeting, is(expectedUserGreeting));
     }
 
+    @Ignore("Flaky test needs to be fixed")
     @Test
     public void getFlakyResultTest(){
         assertThat( Math.random() < 0.5, is(true));
