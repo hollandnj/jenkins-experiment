@@ -13,12 +13,6 @@ public class HelloUserTest {
         assertThat(actualUserGreeting, is(expectedUserGreeting));
     }
 
-    //    @Ignore("Flaky test needs to be fixed")
-    @Test
-    public void flakyResultTest() {
-        assertThat(Math.random() < 0.5, is(true));
-    }
-
     @Test
     public void ratherSlowTest() throws InterruptedException {
         for (int i = 0; i < 5; i++) {
@@ -27,9 +21,34 @@ public class HelloUserTest {
         }
     }
 
+//    @Test
+//    public void thisAlwaysFailsTest(){
+//        assertThat("black", is("white"));
+
+
     @Test
-    public void thisAlwaysFailsTest(){
-        assertThat("black", is("white"));
+    public void flakyResultTest1() {
+        assertThat(Math.random() < 0.1, is(true));
+    }
+    @Test
+    public void flakyResultTest2() {
+        assertThat(Math.random() < 0.1, is(true));
+    }
+    @Test
+    public void flakyResultTest3() {
+        assertThat(Math.random() < 0.1, is(true));
+    }
+    @Test
+    public void flakyResultTest4() {
+        assertThat(Math.random() < 0.1, is(true));
+    }
+    @Test
+    public void flakyResultTest5() {
+        assertThat(Math.random() < 0.1, is(true));
+    }
+    @Test
+    public void flakyResultTest6() {
+        assertThat(Math.random() < 0.1, is(true));
     }
 }
 
