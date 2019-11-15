@@ -26,5 +26,10 @@ public class HelloUserTest {
             Thread.sleep(5000);
         }
     }
+
+    @Test
+    public void thisAlwaysFailsTest(){
+        assertThat("black", is("white"));
+    }
 }
 
